@@ -9,12 +9,10 @@ import { v2 as cloudinary } from "cloudinary";
 
 const app = express();
 
-app.use(cors(
-    {
-        origin: 'https://payment-iota-eight.vercel.app/',
-        credentials: true
-    }
-));
+app.use(cors({ 
+    origin: ['http://localhost:3000', 'https://payment-iota-eight.vercel.app'],
+    credentials: true 
+  }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
