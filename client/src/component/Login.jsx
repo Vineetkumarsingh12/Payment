@@ -25,10 +25,11 @@ import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
-  console.log(server);
+  
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const naviagte = useNavigate();
+  console.log(server);
 
   const toggleLogin = () => setIsLogin((prev) => !prev);
 
