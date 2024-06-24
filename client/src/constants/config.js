@@ -1,1 +1,1 @@
-export const server = "http://localhost:5000"
+export const server = "https://payment-vfu9.onrender.com"
