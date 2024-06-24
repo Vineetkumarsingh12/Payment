@@ -25,7 +25,7 @@ const Plans = () => {
     }, []);
 
     return (
-        <div className=' flex flex-row flex-wrap  justify-center p-3'>
+        <div className=' flex flex-row flex-wrap gap-2  justify-center p-3'>
             { plans?.map((plan) => (
                 <Card key={plan._id} plan={plan} />
             ))}

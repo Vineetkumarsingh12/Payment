@@ -31,7 +31,7 @@ const Checkout = () => {
     console.log("amount", amount);
 
     return (
-        <div className='flex flex-row p-3'>
+        <div className='flex flex-row p-3 gap-1'>
             <div className=' flex flex-row  gap-2 flex-wrap'>
                 {cart.map((plan) => (
                     <Card key={plan._id} plan={plan} checkout={true} />
